@@ -2,9 +2,8 @@
 
 const hre = require('hardhat');
 const abi = require('../artifacts/contracts/BuyMeACoffee.sol/BuyMeACoffee.json');
-// require('dotenv').config();
 
-CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS;
+const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS;
 
 async function getBalance(provider, address){
     const balanceBigInt = await provider.getBalance(address);

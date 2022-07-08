@@ -1,4 +1,6 @@
 // scripts/buy-coffee.js
+// Is this only for local testing ?
+// Does this automatically deploy to a local address ?
 
 const hre = require("hardhat");
 

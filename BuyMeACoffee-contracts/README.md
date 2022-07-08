@@ -1,5 +1,15 @@
 # Week 2 of the Road to Web3 tutorial from Alchemy.
 
+<p>Questions:</p>
+<ul>
+<li>What is waffle ?</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
 ```shell
 npx hardhat accounts
 npx hardhat compile
