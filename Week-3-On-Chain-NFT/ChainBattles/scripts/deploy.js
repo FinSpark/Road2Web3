@@ -5,6 +5,7 @@ const main = async () => {
         const nftContract = await nftContractFactory.deploy();
         await nftContract.deployed();
         console.log("Contract deployed to ", nftContract.address);
+        console.log(await nftContract.generateCharacter(1));
         process.exit(0);
     } catch (error) {
         console.log(error);

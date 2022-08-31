@@ -5,6 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/utils/Base64.sol";
+import "hardhat/console.sol";
 
 contract ChainBattles is ERC721URIStorage {
     using Strings for uint256;
@@ -17,7 +18,7 @@ contract ChainBattles is ERC721URIStorage {
 
     }
 
-    function generateCharacter(uint256 tokenId) public returns(string memory){
+    function generateCharacter(uint256 tokenId) public view returns(string memory){
 
         bytes memory svg = abi.encodePacked(
             '<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 350 350">',
@@ -27,6 +28,13 @@ contract ChainBattles is ERC721URIStorage {
             '<text x="50%" y="50%" class="base" dominant-baseline="middle" text-anchor="middle">', "Levels: ",getLevels(tokenId),'</text>',
             '</svg>'
         );
+        console.log("About to print the string");
+        console.log(string(
+            abi.encodePacked(
+                "data:image/svg+xml;base64,",
+                Base64.encode(svg)
+            )));
+        console.log("String printed.");
         return string(
             abi.encodePacked(
                 "data:image/svg+xml;base64,",

@@ -1,0 +1,20 @@
+{
+	"description": "This NFT is further proof that I've deployed an ERC721 Smart Contract on Rinkeby.",
+	"external_url": "https://ipfs.filebase.io/ipfs/QmUrzq6TZcDZCwZe36tXsUcpjFpqZBzmixA1BDbi9daMGW",
+	"image": "ipfs://QmUrzq6TZcDZCwZe36tXsUcpjFpqZBzmixA1BDbi9daMGW",
+	"name": "ERC721 PoK",
+	"attributes": [
+		{
+			"trait_type": "Coolness",
+			"value": "Unique."
+		},
+		{
+			"trait_type": "Website",
+			"value": "Qlicks.io"
+		},
+		{
+			"trait_type": "Token standard",
+			"value": "ERC721"
+		}
+	]
+}
